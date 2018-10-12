@@ -4,25 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>New Millennium Sign</title>
+  <title>New Millennium Signs</title>
 
   <!-- Compilado y minificado CSS Materializa -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- FontAwesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
   <!-- CSS personalizado de la Web -->
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- Header -->
   <header>
+    <!-- <nav> -->
+    <div class="menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Products</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>        
+    </div>
+  <!-- </nav> -->  
   </header>
   <!-- Main -->
   <main>
-
+    <section id="home" class="scrollspy"></section>
+    <section id="product" class="scrollspy">
+      <div class="container">
+        <div class="red testcontenedor"></div>
+      </div>
+    </section>
+    <section id="contact" class="scrollspy">
+        <div class="container">
+            <div class="yellow testcontenedor"></div>
+        </div>
+    </section>    
   </main>
   <!-- Footer -->
-  <footer>    
+  <footer id="footer"> 
+    <div></div>   
   </footer>
+
+  <!-- Area de Script -->
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <!-- Compilado y minificado JavaScript Materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- Javascript personalizado de la Web -->
