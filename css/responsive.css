@@ -25,3 +25,11 @@
     background: var(--nms-red);
   }
 }
+
+
+
+@media (max-width: 450px){
+  .mns-h3{
+    font-size: 2em;
+  }
+}
