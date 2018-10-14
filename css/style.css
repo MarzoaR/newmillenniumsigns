@@ -215,8 +215,9 @@ section#home{
   /* width: 80%; */
   /* outline: 1px solid yellow; */
 }
-#home p{
+#home h2{
   /* width: 25vw; */
+  padding: 0 20px 0;
   color: white;
 }
 
@@ -234,7 +235,7 @@ section#home{
   font-family: 'Montserrat';
   font-size: 1.2rem;
   font-weight: 600;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   color: var(--nms-white);
   line-height: 50px;
   text-transform: uppercase;  
