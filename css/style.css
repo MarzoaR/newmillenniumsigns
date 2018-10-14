@@ -215,7 +215,7 @@ section#home{
   /* width: 80%; */
   /* outline: 1px solid yellow; */
 }
-.nms-flex-center p{
+#home p{
   /* width: 25vw; */
   color: white;
 }
@@ -226,8 +226,8 @@ section#home{
   width: 150px;
   margin: 30px;
   padding: 0;
-  background: transparent;
-  border: 2px solid var(--nms-white);
+  background: var(--nms-red);
+  /* border: 2px solid var(--nms-white); */
   border-radius: 30px;
 }
 .nms-callto{
