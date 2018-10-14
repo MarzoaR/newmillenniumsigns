@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
   });  
 });
 
-
+// ======================= Menu =======================
 $(document).ready(function(){
 // agregar clases al hacer click sobre el botón de menú
   $('.menu').click(function(){
@@ -24,3 +24,17 @@ $(document).ready(function(){
   });
 
 });
+
+
+
+// ======================= Call to action main =======================
+$(window).resize(function(){
+  // console.log('resize called');
+  var width = $(window).width();
+  if(width < 600){
+    $('#callto').removeClass('nms-flex-center');
+  }else{
+    $('#callto').addClass('nms-flex-center');
+  }
+})
+.resize();

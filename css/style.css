@@ -9,6 +9,8 @@
   --nms-bodycolor: var(--nms-white);
   --mns-backhome: var(--nms-darkblue);
   --mns-backfooter: var(--nms-darkblue);
+
+  --nms-backhome-temp: linear-gradient(-90deg, var(--nms-darkblue) , var(--nms-blue));
 }
 
 @font-face {
@@ -35,6 +37,12 @@ body{
 
 h3{
   font-family: 'Montserrat', sans-serif;
+}
+
+.mns-h3{  
+  font-size: 2.5em;
+  letter-spacing: 2px;
+  font-weight: 700;
 }
 
 /* ==================================================================== TEMPORAL ============================================================================ */
@@ -178,9 +186,59 @@ h3{
 section#home{
   height: 100vh;
   width: 100%;
-  background: var(--mns-backhome);
+  background: var(--nms-backhome-temp);
+  /* var(--mns-backhome); */
 }
 
+/* .nms-flex-center{ */
+  /* width: 500px;
+  height: 500px; */
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* height: 100vh;
+  width: 100%; */  
+  /* outline: 1px solid red; */
+/* } */
+
+.nms-flex-center{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* outline: 1px solid red; */
+}
+
+.nms-flex-center img{  
+  /* width: 80%; */
+  /* outline: 1px solid yellow; */
+}
+.nms-flex-center p{
+  /* width: 25vw; */
+  color: white;
+}
+
+#callto a{
+  display: inline-block;
+  height: 50px;
+  width: 150px;
+  margin: 30px;
+  padding: 0;
+  background: transparent;
+  border: 2px solid var(--nms-white);
+  border-radius: 30px;
+}
+.nms-callto{
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--nms-white);
+  line-height: 50px;
+  text-transform: uppercase;  
+}
 
 
 /* ========================================================================  PRODUCT  ======================================================================== */
@@ -189,24 +247,45 @@ section#product{
   padding-top: 10px;
 }
 
-.mns-h3{
-  /* font-family: 'Montserrat', sans-serif; */
-  /* color: var(--font-terceary-color); */
-  font-size: 2.5em;
-  letter-spacing: 2px;
-  font-weight: 700;
-  /* padding: 29px 0 10px;
-  margin-bottom: 10px; */
-}
-
 
 /* ========================================================================  CONTACT  ======================================================================== */
 
 section#contact{
   padding-top: 30px;
 }
+#contact .card-content .row{
+  margin-bottom: 0;
+}
+.nms-contact-btn li{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.nms-contact-btn i{
+  color: var(--nms-red);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.nms-contact-btn span{
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--nms-red);
+  line-height: 2rem;
+}
 
-
+.input-field{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+form .btn{
+  width: 100px;
+  background-color: var(--nms-red);
+  border-radius: 50px;
+}
+form .btn:hover{
+  background-color: var(--nms-red);
+  opacity: 0.8;
+}
 
 /* ========================================================================  FOOTER  ======================================================================== */
 
