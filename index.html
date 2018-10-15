@@ -13,6 +13,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- FontAwesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <!-- CSS personalizado de la Web -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
@@ -50,7 +52,7 @@
         <div id="callto" class="col s12 m6 l6 xl6 nms-flex-center">
           <div class="center-align">
             <h2>Cut out the middle man & go straight to the source!</h2>
-            <a id="btncall" href="#product" class="nms-callto btn waves-effect waves-light">I want it!</a>            
+            <a id="btncall" href="#product" class="nms-callto btn waves-effect waves-light wow bounce">I want it!</a>            
           </div>
           <div class="nms-redes">
             <ul>
@@ -65,7 +67,7 @@
     <section id="product" class="scrollspy">
       <div class="container">
         <!-- Elemento 1 -->
-        <article>
+        <article class="wow fadeInRight" data-wow-duration="2500ms">
         <h3 class="mns-h3">Channel Letters</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
         <div class="row">
@@ -93,7 +95,7 @@
         </div>
         </article>
         <!-- Elemento 2 -->
-        <article>
+        <article class="wow fadeInLeft" data-wow-duration="2500ms">
         <h3 class="mns-h3">Light Boxes</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
         <div class="row">
@@ -121,7 +123,7 @@
         </div>
         </article>
         <!-- Elemento 3 -->
-        <article>
+        <article class="wow fadeInRight" data-wow-duration="2500ms">
         <h3 class="mns-h3">Cut Out Letters</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
         <div class="row">
@@ -205,8 +207,23 @@
     </section>    
   </main>
   <!-- Footer -->
-  <footer id="footer"> 
-    <div class="row">
+  <footer id="footer" class="scrollspy"> 
+    <div class="row" style="padding-top:25px;">
+      <div class="col s12 m6 l6 xl6">
+        <div class=nms-logo-footer>
+          <div>
+            <a href="#home" class="scrollspy"><img src="img/logo.png" class="responsive-img" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l6 xl6">
+        <div class="nms-redes-footer">
+          <ul>
+            <li><a href="https://www.facebook.com/New-Millennium-Signs-1906708896084771/" target="_blank" class="waves-effect waves-light"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/newmillenniumsigns/" target="_blank" class="waves-effect waves-light"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://twitter.com/NMillenniumSign" target="_blank" class="waves-effect waves-light"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div></div>
       <div class="col s12 center-align">
         <p>&copy; Copyright Aphno Marketing 2018</p>
       </div>
@@ -218,6 +235,8 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <!-- Compilado y minificado JavaScript Materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Animated wow -->
+  <script src="js/wow/wow.min.js"></script>
   <!-- Javascript personalizado de la Web -->
   <script src="js/main.js"></script>
 </body>

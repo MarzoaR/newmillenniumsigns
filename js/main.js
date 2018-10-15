@@ -2,11 +2,15 @@ document.addEventListener('DOMContentLoaded', function(){
   M.AutoInit();
   // ======================= Scroll =======================
   var scroll = document.querySelectorAll('.scrollspy');
-  var instances = M.ScrollSpy.init(scroll, {
-    scrollOffset:0,
-    throttle: 200
-  });  
+  var instance = M.ScrollSpy.init(scroll, {
+    throttle:2000,
+    scrollOffset:0
+    
+  });
+  new WOW().init();
 });
+
+
 
 // ======================= Menu =======================
 $(document).ready(function(){
