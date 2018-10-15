@@ -30,12 +30,16 @@
     transition: .8s;
     background: var(--nms-red);
   }
+
+  .nms-redes{
+    display: none;
+  }
 }
 
 @media (max-width: 600px){
   .nms-flex-center{
     height: 50vh;
-  }
+  }  
 }
 
 @media (max-width: 450px){
