@@ -179,7 +179,15 @@ h3{
 .op{
   background: rgba(0,0,0, .9);
 }
-
+.nms-redes-menu{
+  display: none;
+}
+.nms-redes-menu a{
+  display: inline-block !important;
+  font-size: 30px !important;
+  margin: 0 10px 0;
+  padding: 0 10px 0 !important;
+}
 
 /* ========================================================================  HOME  ======================================================================== */
 

@@ -30,7 +30,9 @@
     transition: .8s;
     background: var(--nms-red);
   }
-
+  .nms-redes-menu{
+    display: list-item;
+  }
   .nms-redes{
     display: none;
   }
