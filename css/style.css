@@ -7,8 +7,8 @@
   --nms-blue: rgba(53,167,255,1);
 
   --nms-bodycolor: var(--nms-white);
-  --mns-backhome: var(--nms-darkblue);
-  --mns-backfooter: var(--nms-darkblue);
+  --nms-backhome: var(--nms-darkblue);
+  --nms-backfooter: var(--nms-darkblue);
 
   --nms-backhome-temp: linear-gradient(-90deg, var(--nms-darkblue) , var(--nms-blue));
 }
@@ -187,7 +187,8 @@ section#home{
   height: 100vh;
   width: 100%;
   /* background: var(--nms-backhome-temp); */
-  background: var(--mns-backhome);
+  background: var(--nms-backhome);
+  overflow: hidden;
 }
 
 /* .nms-flex-center{ */
@@ -211,17 +212,13 @@ section#home{
   /* outline: 1px solid red; */
 }
 
-.nms-flex-center img{  
-  /* width: 80%; */
-  /* outline: 1px solid yellow; */
-}
 #home h2{
   /* width: 25vw; */
   padding: 0 20px 0;
   color: white;
 }
 
-#callto a{
+#callto #btncall{
   display: inline-block;
   height: 50px;
   width: 150px;
@@ -241,6 +238,34 @@ section#home{
   text-transform: uppercase;  
 }
 
+.nms-redes{
+  position: absolute;
+  bottom: 25px;
+}
+.nms-redes ul{
+  display: flex;
+  margin: 0;
+  padding: 0;  
+}
+.nms-redes ul li{
+  list-style: none;
+}
+.nms-redes ul li a{
+  display: block;  
+  width: 50px;
+  height: 50px;
+  background: var(--nms-red);
+  border-radius: 50%;
+  margin: 0 10px 0;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+.nms-redes ul li a i{
+  color: var(--nms-white);
+  font-size: 25px;
+  line-height: 50px;
+}
 
 /* ========================================================================  PRODUCT  ======================================================================== */
 
@@ -254,9 +279,11 @@ section#product{
 section#contact{
   padding-top: 30px;
 }
+
 #contact .card-content .row{
   margin-bottom: 0;
 }
+
 .nms-contact-btn li{
   display: inline-block;
   width: 100%;
@@ -268,7 +295,7 @@ section#contact{
   margin-bottom: 1rem;
 }
 .nms-contact-btn span{
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--nms-red);
   line-height: 2rem;
@@ -291,12 +318,21 @@ form .btn:hover{
 /* ========================================================================  FOOTER  ======================================================================== */
 
 #footer{
+  color: var(--nms-white);
   width: 100%;
-  background: var(--mns-backfooter);
+  background: var(--nms-backfooter);
 }
-#footer div{
+
+#footer .row{
+  margin-bottom: 0;
+}
+
+#footer p{
+  font-size: 1rem;
+}
+/* #footer div{
   padding: 50px;
-}
+} */
 
 
 
