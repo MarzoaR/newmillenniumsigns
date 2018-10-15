@@ -18,6 +18,8 @@
   <!-- CSS personalizado de la Web -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <!-- Get a specific version -->
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>  
 </head>
 <body>
   <!-- Header -->
@@ -30,9 +32,9 @@
     </div>
     <div class="menu-bar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#product">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a data-scroll href="#home">Home</a></li>
+        <li><a data-scroll href="#product">Products</a></li>
+        <li><a data-scroll href="#contact">Contact</a></li>
         <li class="nms-redes-menu">
           <a href="https://www.facebook.com/New-Millennium-Signs-1906708896084771/" target="_blank" class="waves-effect waves-light"><i class="fab fa-facebook-f"></i></a>
           <a href="https://www.instagram.com/newmillenniumsigns/" target="_blank" class="waves-effect waves-light"><i class="fab fa-instagram"></i></a>
@@ -44,7 +46,7 @@
   </header>
   <!-- Main -->
   <main>
-    <section id="home" class="perro">
+    <section id="home">
       <div class="row">
         <div class="col s12 m6 l6 xl6 nms-flex-center">          
           <img src="img/logo.png" class="responsive-img" alt="Logo NMS">          
@@ -52,7 +54,7 @@
         <div id="callto" class="col s12 m6 l6 xl6 nms-flex-center">
           <div class="center-align">
             <h2>Cut out the middle man & go straight to the source!</h2>
-            <a id="btncall" href="#product" class="nms-callto btn waves-effect waves-light wow bounce">I want it!</a>            
+            <a data-scroll id="btncall" href="#product" class="nms-callto btn waves-effect waves-light wow bounce">I want it!</a>            
           </div>
           <div class="nms-redes">
             <ul>
@@ -64,12 +66,12 @@
         </div>
       </div>
     </section>
-    <section id="product" class="perro">
+    <section id="product">
       <div class="container">
         <!-- Elemento 1 -->
         <article class="wow fadeInRight" data-wow-duration="2500ms">
         <h3 class="mns-h3">Channel Letters</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
+        <p>A 3D look to your front sign will let everyone spot you from a big distance, also it will give a professional look to your business above all your competitors and neighbours.</p>
         <div class="row">
           <div class="col s12 m4 l4 xl4">            
             <div class="card">
@@ -97,7 +99,7 @@
         <!-- Elemento 2 -->
         <article class="wow fadeInLeft" data-wow-duration="2500ms">
         <h3 class="mns-h3">Light Boxes</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
+        <p>A light box is elegant, versatile and easy to move in case you need to. These are some samples that will give you an idea of this great sign style!</p>
         <div class="row">
           <div class="col s12 m4 l4 xl4">            
             <div class="card">
@@ -125,7 +127,7 @@
         <!-- Elemento 3 -->
         <article class="wow fadeInRight" data-wow-duration="2500ms">
         <h3 class="mns-h3">Cut Out Letters</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde sit sunt assumenda.</p>
+        <p>If you need a beautifully designed letter and classy looking, not too flashy, this is the product for you! Here are some samples.</p>
         <div class="row">
           <div class="col s12 m4 l4 xl4">            
             <div class="card">
@@ -152,7 +154,7 @@
         </article>
       </div>
     </section>
-    <section id="contact" class="perro">
+    <section id="contact">
       <div class="container">
         <div class="row">
           <div class="col s12">
@@ -212,7 +214,7 @@
       <div class="col s12 m6 l6 xl6">
         <div class=nms-logo-footer>
           <div>
-            <a href="#home"><img src="img/logo.png" class="responsive-img" alt=""></a>
+            <a data-scroll href="#home"><img src="img/logo.png" class="responsive-img" alt=""></a>
           </div>
         </div>
       </div>
@@ -230,7 +232,7 @@
     </div>   
   </footer>
 
-  <!-- Area de Script -->
+  <!-- Area de Script -->  
   <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <!-- Compilado y minificado JavaScript Materialize -->
